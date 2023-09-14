@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react'
-import Header from '../../components/Headers'
+import Header from '../../components/Otherheader'
 
 export default class Cartpage extends Component {
   render() {

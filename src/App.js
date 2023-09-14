@@ -5,14 +5,14 @@ import Start from './components/Start';
 import Works from './components/Works';
 import About from './components/About';
 import Cartpage from './pages/Cartpage/Cartpage'; 
-import ScrollToTop from "react-scroll-to-top";
+import Scroll from "react-scroll-to-top";
 
 
 
 function App() {
   return (
     <div>
-      <ScrollToTop />
+      <Scroll />
       <Header />
 
 

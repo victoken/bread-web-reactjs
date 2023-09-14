@@ -1,22 +1,14 @@
-// const Headers = ()=>{
-//     return <div>Header</div>
-// }
-// export default Headers
-
 import React, { useState, useEffect } from "react";
-import './Headers.css';
+import './Otherheader.css';
 import { CSSTransition } from "react-transition-group";
 import { Link as RouterLink } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
-
-
-
+// import { Link as ScrollLink } from 'react-scroll';
 
 // import logo from '../picture/cover.jpg'
 
 
 
-export default function Header() {
+export default function Otherheader() {
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -43,7 +35,7 @@ export default function Header() {
     };
 
     return (
-        <header className="Header">
+        <header className="Otherheader">
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}
                 timeout={350}
@@ -52,13 +44,11 @@ export default function Header() {
             >
                 <nav className="Nav">
                     {/* <Link activeClass="active" to="" onClick={toggleNav} spy={true} smooth={true} class="menu-link">Home</Link> */}
-                    <ScrollLink to="Start" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">首頁</ScrollLink>
-                    <ScrollLink to="Works" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">系列作品</ScrollLink>
-                    <ScrollLink to="About" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">關於作者Jane</ScrollLink>
+                    <RouterLink to="App" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">首頁</RouterLink>
                     <RouterLink to="cart" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">購物車</RouterLink>
                 </nav>
             </CSSTransition>
-            <button onClick={toggleNav} className="Menu">
+            <button onClick={toggleNav} className="Burger">
                 <i className='fa fa-bars'></i>
             </button>
         </header>
