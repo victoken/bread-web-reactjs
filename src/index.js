@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import './App.css';
-import Cartpage from './pages/Cartpage';
+import Cartpage from './pages/Cartpage/Cartpage';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
