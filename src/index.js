@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import Cartpage from './pages/CartPage';
+import './App.css';
+import Cartpage from './pages/Cartpage';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
-  Router,
   RouterProvider,
+  Route,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -16,10 +17,10 @@ const router = createBrowserRouter([
     element: <App />
   },
 
-  // {
-  // //   path: "/cart",
-  // //   element: <Cartpage />
-  // // }
+  {
+    path: "/cart",
+    element: <Cartpage />
+  },
 
 ]);
 

@@ -6,8 +6,9 @@
 import React, { useState, useEffect } from "react";
 import './Headers.css';
 import { CSSTransition } from "react-transition-group";
-import { Link } from 'react-scroll'
-// import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
+
 // import logo from '../picture/cover.jpg'
 
 
@@ -48,10 +49,10 @@ export default function Header() {
             >
                 <nav className="Nav">
                     {/* <Link activeClass="active" to="" onClick={toggleNav} spy={true} smooth={true} class="menu-link">Home</Link> */}
-                    <Link to="Start" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">首頁</Link>
-                    <Link to="Works" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">系列作品</Link>
-                    <Link to="About" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">關於作者Jane</Link>
-                    <Link to="Cart" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">購物車</Link>
+                    <ScrollLink to="Start" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">首頁</ScrollLink>
+                    <ScrollLink to="Works" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">系列作品</ScrollLink>
+                    <ScrollLink to="About" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">關於作者Jane</ScrollLink>
+                    <RouterLink to="cart" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">購物車</RouterLink>
                 </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Burger">

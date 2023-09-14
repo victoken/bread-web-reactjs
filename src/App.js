@@ -4,7 +4,7 @@ import Header from './components/Headers';
 import Start from './components/Start';
 import Works from './components/Works';
 import About from './components/About';
-// import Cartpage from './pages/CartPage'; 
+// import Cartpage from './pages/Cartpage'; 
 import ScrollToTop from "react-scroll-to-top";
 
 
