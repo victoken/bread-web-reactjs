@@ -20,15 +20,22 @@ export default function Header() {
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+    // 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 700px)");
-        mediaQuery.addListener(handleMediaQueryChange);
-        handleMediaQueryChange(mediaQuery);
-
-        return () => {
-            mediaQuery.removeListener(handleMediaQueryChange);
+      
+        const handleChange = (event) => {
+          handleMediaQueryChange(event);
         };
-    }, []);
+      
+        mediaQuery.addEventListener("change", handleChange);
+        handleMediaQueryChange(mediaQuery);
+      
+        return () => {
+          mediaQuery.removeEventListener("change", handleChange);
+        };
+      }, []);
+      
 
     const handleMediaQueryChange = mediaQuery => {
         if (mediaQuery.matches) {
