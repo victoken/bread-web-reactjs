@@ -7,7 +7,8 @@ export default class Cartpage extends Component {
   render() {
     return (
         <><Header></Header>
-        <div>購物車</div></>
+        <div>購物車</div>
+        <div>22222222</div></>
     )
   }
 }
