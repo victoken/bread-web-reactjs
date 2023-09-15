@@ -8,7 +8,7 @@ export default class Cartpage extends Component {
     return (
         <><Header></Header>
         <div>購物車</div>
-        <div>22222222</div></>
+        <div>3333333</div></>
     )
   }
 }
