@@ -1,13 +1,5 @@
 
-.Cover {
-  background-image: url("../picture/cover.jpg"); /* 用你的图片路径替换 */
-  background-size: cover;
-  background-position: center;
-  /* 其他样式属性，例如高度、文字颜色等 */
-}
-
-
-
+@import '~font-awesome/css/font-awesome.min.css';
 
 .Header {
     position: fixed;
@@ -15,10 +7,10 @@
     top: 0;
     max-height: 70px;
     padding: 1.2rem;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-areas: "logo nav";
-    /* background-color: #1e1e1e; */
+    background-color:	#FFFCEC;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -28,10 +20,12 @@
     grid-template-columns: repeat(5, auto);
     align-items: center;
     justify-items: center;
+    background-color:	#FFFCEC;   
+    /* 顯示一下 */
   }
 
-  .OtherNav a {
-    color: #fff;
+  .Nav a {
+    color: 		#2F0000;
     font-size: 1.2rem;
     font-weight: 300;
     transition: 0.5s;
@@ -42,7 +36,17 @@
     cursor: pointer;
   }
   .Nav button {
-    padding: 10px;
+    height: 10px;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: space-between; 
+
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: pointer; 
+  }
+    /* padding: 10px;
     outline: none;
     border: none;
     font-size: 20px;
@@ -52,20 +56,21 @@
     box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.25);
     border-radius: 10px;
     cursor: pointer;
-    transition: 70ms;
-  }
+    transition: 70ms; */
+    
+  /* } */
   
   .Nav button:active {
     transform: translateY(3px);
     box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
   }
-  .Menu:focus{
+  .Burger:focus{
       outline: none;
   }
   
-  .Menu {
+  .Burger {
     display: none;
-    grid-area: menu;
+    grid-area: Burger;
     margin: 0 20px 0 0;
     padding: 0;
     justify-self: end;
@@ -73,16 +78,25 @@
     border: none;
     background: none;
     outline: none;
+    
     text-decoration: none;
     transition: 0.1s;
+
   }
-  .Menu:active {
+
+  .Burger:active {
     transform: scale(1.2);
-  }
+}
+
+  /* .Burgur:active {
+    transform: scale(1.2);
+  } */
+
+
   
   @media (max-width: 700px) {
     .Header {
-      grid-template-areas: "logo menu" "nav nav";
+      grid-template-areas: "logo burger" "nav nav";
     }
     .Nav {
       grid-template-rows: repeat(4, auto);
@@ -98,8 +112,16 @@
     .Nav a:hover {
         color: #282c34;
       }
-    .Menu {
+    .Burger {
       display: inline;
+    }
+
+    .Burger-bars{
+      width: 4em;
+      height: 0.5em;
+      background-color:aqua;
+      border-radius: 0.5em;
+
     }
   }
   
@@ -121,3 +143,18 @@
     transition: opacity 350ms, transform 350ms;
   }
   
+  bars:before {
+    content: "\f0c9";
+}
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+}

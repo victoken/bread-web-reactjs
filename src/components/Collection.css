@@ -1,0 +1,55 @@
+/* ImageViewer.css */
+
+.image-card {
+    border-radius: 50px;
+    position: relative;
+    width: 220px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.image-card-container {
+
+     
+    display:inline-block; 
+    margin-bottom: 20px;  
+    margin-top: 60px;
+    padding: 10px; 
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.viewer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.viewer img {
+    max-width: 70%;
+    max-height: 71%;
+}
+
+.caption {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.viewer.show {
+    display: flex;
+    opacity: 1;
+}

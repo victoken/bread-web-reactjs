@@ -8,7 +8,7 @@
   .about-text {
     flex: 1; /* 填滿左側 */
     padding: 20px; 
-    background-color: 'gray'
+    background-color: hsl(66, 37%, 47%)
   }
   
   .about-image {

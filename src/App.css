@@ -1,14 +1,19 @@
 :root {
-  --primary-color: #34feaa;
-  --bg-color: #1e1e1e;
+  /* --primary-color: #146745; */
+  --bg-color: #FFFFF4;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+
 }
+h2 {
+  color: #2F0000;
+}
+
+
 
 body {
   background-color: var(--bg-color);
@@ -52,7 +57,7 @@ section h2 {
 #navbar{
   grid-area: nav;
   display: grid;
-  grid-template-columns: repeat(8, auto);
+  grid-template-columns: repeat(4, auto);
   align-items: center;
   justify-items: center;
 }
@@ -61,28 +66,7 @@ section h2 {
   display: none;
 }
 
-/*
-#navbar{
-  padding-right: 11%;
-}
-#navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
 
-#navbar ul li {
-  padding: 0.8rem;
-}
-
-#navbar ul li a {
-  color: #fff;
-}
-
-#navbar ul li a:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-}
 */
 /* Navbar End */
 
@@ -200,84 +184,7 @@ section h2 {
 /* Hero section End */
 
 
-/* Education section start */
 
-.timeline a {
-  color: var(--primary-color);
-  cursor: default;
-}
-
-ul.timeline {
-  list-style-type: none;
-  position: relative;
-}
-
-ul.timeline:before {
-  content: ' ';
-  background: #d4d9df;
-  display: inline-block;
-  position: absolute;
-  left: 29px;
-  width: 2px;
-  height: 100%;
-  z-index: 400;
-}
-
-ul.timeline>li {
-  margin: 20px 0;
-  padding-left: 3.2rem;
-}
-
-ul.timeline>li:before {
-  content: ' ';
-  background: var(--primary-color);
-  display: inline-block;
-  position: absolute;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  left: 20px;
-  width: 20px;
-  height: 20px;
-  z-index: 400;
-}
-
-
-/* Education section end */
-
-span .fa {
-  padding: 0.2rem;
-}
-
-.fa:hover {
-  color: var(--primary-color);
-}
-
-.technologies {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.technologies-row {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  justify-content: flex-start;
-  text-align: start;
-}
-
-.technologies-row li::before{
-  content: "";
-  height: 0;
-  width: 0;
-  border-color: transparent var(--primary-color);
-  border-style: solid;
-  border-width: 0.5em 0 0.5em 0.5em;
-  position: relative;
-  display: block;   
-  left: -1em;
-  top: 1.25em;  
-}
 
 
 /* Scroll to Rop */

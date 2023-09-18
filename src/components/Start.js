@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Headers.css';
 import { Link } from 'react-scroll'
-
+import breadwebcover from '../picture/breadwebcover.jpg'
 
 // {/* <header className="Cover">
 //   <div className="Welcome">
@@ -18,9 +18,14 @@ function Start() {
         <section id="Start" className="container">
             <div className="container">
                 <h2>首頁</h2>
-                <div style={{ height: '500px', backgroundColor: 'gray' }}>
-  //         首頁 有大圖
-  //       </div>
+                <div style={{ height: '620px', backgroundColor: 'gray' }}>
+                <img
+                    src={breadwebcover}
+                    style={{ width: '1020px', height: '620px' }}
+                    
+/>
+
+         </div>
                 
             </div>
         </section>
