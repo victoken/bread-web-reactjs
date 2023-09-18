@@ -32,52 +32,6 @@
 
 
 
-// import ImageViewer from './Collection';
-// import './Collection.css';
-// import breadco from '../picture/breadco.jpg'
-// import cookieco from '../picture/cookieco.jpg'
-// function Work() {
-//     // 定义图片数据
-//     const imageData = [
-//         {
-//             id: 1,
-//             image: breadco, // 图像路径需要根据实际情况调整
-//             title: 'Image 1',
-//             description: 'Description for Image 1',
-
-//             id: 2,
-//             image: cookieco, // 图像路径需要根据实际情况调整
-//             title: 'Image 2',
-//             description: 'Description for Image 2',
-//         },
-
-//         // 添加更多图像数据
-//     ];
-
-
-    
-//     return (
-//         <section id="Works" className="container">
-//             <div className="work-container">
-//                 <h2>系列作品</h2>
-//                 <div style={{ height: '500px', backgroundColor: 'gray' }}>
-//                     {imageData.map((data) => (
-//                         <div className="image-card-container" key={data.id}>
-//                             <ImageViewer
-//                                 key={data.id}
-//                                 image={data.image}
-//                                 title={data.title}
-//                                 description={data.description}
-//                             />
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
-
-// export default Work;
 
 
 
@@ -98,12 +52,14 @@ function Work() {
             image: breadco,
             title: 'Image 1',
             description: 'Description for Image 1',
+            datatitle:'麵包系列',
         },
         {
             id: 2,
             image: cookieco,
             title: 'Image 2',
             description: 'Description for Image 2',
+            datatitle:'餅乾系列',
         },
 
         {
@@ -111,6 +67,7 @@ function Work() {
             image: cakeco,
             title: 'Image 3',
             description: 'Description for Image 3',
+            datatitle:'蛋糕系列',
         },
 
         {
@@ -118,6 +75,7 @@ function Work() {
             image: teachco,
             title: 'Image 4',
             description: 'Description for Image 4',
+            datatitle:'烘培教學',
         },
        
     ];
@@ -126,15 +84,17 @@ function Work() {
         <section id="Works" className="container">
             <div className="work-container">
                 <h2>系列作品</h2>
-                <div style={{ height: '500px', backgroundColor: '#FFFFF4' }}>
+                <div className="withcontainer" style={{ height: '500px', backgroundColor: '#FFFFF4' }}>
                     {imageData.map((data) => (
                         <div className="image-card-container" key={data.id}>
-                            <ImageViewer
-                                key={data.id}
-                                image={data.image}
-                                title={data.title}
-                                description={data.description}
+                        <ImageViewer
+                            key={data.id}
+                            image={data.image}
+                            title={data.title}
+                            description={data.description}
+                            
                             />
+                              <p style={{ color: '#000000' }}>{data.datatitle}</p>
                         </div>
                     ))}
                 </div>

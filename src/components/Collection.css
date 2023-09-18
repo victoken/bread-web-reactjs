@@ -1,5 +1,13 @@
 /* ImageViewer.css */
 
+.work-container {
+
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    text-align: center; 
+
+    }
+
 .image-card {
     border-radius: 50px;
     position: relative;
@@ -8,13 +16,23 @@
     overflow: hidden;
     cursor: pointer;
 }
-.image-card-container {
+
+/* .image-card-container {
 
      
     display:inline-block; 
+    justify-content: center;
     margin-bottom: 20px;  
     margin-top: 60px;
     padding: 10px; 
+
+} */
+.image-card-container {
+    display: inline-block;
+    justify-content: center; 
+    margin-bottom: 20px;
+    margin-top: 60px;
+    padding: 10px;
 }
 
 .thumbnail {
@@ -53,3 +71,35 @@
     display: flex;
     opacity: 1;
 }
+
+@media (max-width: 700px) {
+
+.work-container {
+
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    text-align: center; 
+    height: 900px
+    }
+
+.withcontainer{
+    height: px
+
+
+}
+
+
+}
+@media (max-width: 500px) {
+
+    .work-container {
+    
+        margin-bottom: 20px;
+        margin-top: 20px; 
+        text-align: center; 
+        height: 1700px
+        }
+    
+
+    }
+

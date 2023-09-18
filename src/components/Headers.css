@@ -20,6 +20,7 @@
     grid-template-columns: repeat(5, auto);
     align-items: center;
     justify-items: center;
+    width: 100%;
     background-color:	#FFFCEC;   
     /* 顯示一下 */
   }
@@ -69,6 +70,7 @@
   }
   
   .Burger {
+    position: fixed;
     display: none;
     grid-area: Burger;
     margin: 0 20px 0 0;
@@ -88,15 +90,20 @@
     transform: scale(1.2);
 }
 
-  /* .Burgur:active {
-    transform: scale(1.2);
-  } */
+  .logo-pos {
+    position: absolute;
+    left: 20px;
+    top: 10px; 
+}
+
+ 
 
 
   
   @media (max-width: 700px) {
     .Header {
       grid-template-areas: "logo burger" "nav nav";
+      height: 70px;
     }
     .Nav {
       grid-template-rows: repeat(4, auto);
@@ -116,14 +123,49 @@
       display: inline;
     }
 
-    .Burger-bars{
-      width: 4em;
-      height: 0.5em;
-      background-color:aqua;
-      border-radius: 0.5em;
-
+  .logo-pos {
+      position: relative; 
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto; 
+      transform: translateX(0); /* 取消水平位移 */
+      text-align: center; /* 當作文字水平置中 */
+      }
     }
-  }
+
+ 
+  
+    
+    
+
+    
+  
+
+/* Headers.css */
+
+/*首頁大圖縮放*/
+
+.image-change {
+  max-width: 100%;
+  max-height: 65vw; 
+  width: auto; 
+  height: auto; 
+}
+
+/* 首頁的部分跟大圖配合 */
+.start-change{
+  max-width: 100%;
+  max-height: 65vw; 
+  width: auto; 
+  height: auto; 
+
+
+} 
+
+
+  
   
   .NavAnimation-enter {
     opacity: 0;
@@ -143,18 +185,3 @@
     transition: opacity 350ms, transform 350ms;
   }
   
-  bars:before {
-    content: "\f0c9";
-}
-
-  .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  button:not(:disabled) {
-    cursor: pointer;
-}

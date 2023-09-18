@@ -1,3 +1,4 @@
+
 // const Headers = ()=>{
 //     return <div>Header</div>
 // }
@@ -52,6 +53,8 @@ export default function Header() {
 
     return (
         <header className="Header">
+
+            
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}
                 timeout={350}
@@ -60,23 +63,21 @@ export default function Header() {
             >
                 <nav className="Nav">
                 <ScrollLink to="Start" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">
-                <img src={janelogo} alt="Jane's Logo" width="80" height="40" />
-                
-                </ScrollLink>
-                    
+                <img src={janelogo} alt="Jane's Logo" width="80" height="40" class="logo-pos"/> 
+                </ScrollLink> 
                     <ScrollLink to="Start" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">首頁</ScrollLink>
                     <ScrollLink to="Works" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">系列作品</ScrollLink>
                     <ScrollLink to="About" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">關於作者Jane</ScrollLink>
                     <RouterLink to="cart" spy={true} smooth={true} offset={-100} onClick={toggleNav} class="menu-link">購物車</RouterLink>
+                
+                
                 </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Burger">
                 <i className="fa fa-bars"></i>
             </button>
 
-            {/* <button onClick={toggleNav} className="Burger">
-                <i className="fa fa-bars"></i>
-            </button> */}
+
         </header>
     );
 }

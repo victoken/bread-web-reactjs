@@ -18,10 +18,13 @@ function Start() {
         <section id="Start" className="container">
             <div className="container">
                 <h2>首頁</h2>
-                <div style={{ height: '620px', backgroundColor: 'gray' }}>
+                <div style={{ height: '620px', backgroundColor: 'gray' }}
+                className="start-change"
+                >
                 <img
                     src={breadwebcover}
                     style={{ width: '1020px', height: '620px' }}
+                    className="image-change"
                     
 />
 

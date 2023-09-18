@@ -6,22 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
+  color:	#FFE153;
 
 }
-h2 {
-  color: #2F0000;
-}
-
-
-
 body {
   background-color: var(--bg-color);
 }
-
 li {
   list-style: none;
 }
+
 
 a,
 u {
@@ -35,6 +29,14 @@ section {
 section h2 {
   text-align: center !important;
 }
+h2 {
+  color: #2F0000;
+}
+
+
+
+
+
 
 
 /* Navbar Start */
@@ -51,7 +53,8 @@ section h2 {
 
 .header{
   display: grid;
-  grid-template-areas: "logo nav";
+  /* grid-template-areas: "logo nav"; */
+  
 }
 
 #navbar{
@@ -67,7 +70,7 @@ section h2 {
 }
 
 
-*/
+
 /* Navbar End */
 
 
