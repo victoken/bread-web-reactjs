@@ -31,19 +31,25 @@ import React from 'react';
 
 
 import './About.css'; 
-
+import aboutpic from '../picture/aboutpic.jpg'
 function About() {
   return (
     <section id="About" className="container">
       <h2>關於作者Jane</h2>
-      <div style={{ height: '500px', backgroundColor: 'gray' }}>
+      <div style={{ height: '500px', backgroundColor: '#FFED97' }}>
       <div className="container">
         <div className="about-content">
-          <div className="about-text">
-
-            <p>介绍媽媽</p>
-          </div>
-          <div className="about-image"></div>
+          
+            <p className="about-text">
+              介紹媽媽
+            
+            
+            
+            </p>
+          
+           
+          <img src={aboutpic}className="about-image"/>
+          
         </div>
       </div>
       </div>

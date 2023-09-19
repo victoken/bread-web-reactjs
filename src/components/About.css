@@ -9,30 +9,36 @@
     flex: 1; /* 填滿左側 */
     padding: 20px; 
     /* background-color: #d1d6e0 */
+    color:	#000000 ;
+
+
   }
   
+  
   .about-image {
-    width: 300px; 
-    height: 300px; 
+    width: 350px; 
+    height: 350px; 
     background-color: yellow; 
     border-radius: 50px; /* 想要方圓 */
     /* 放圖片 */
     position:Relative;
     bottom:-40px;
-    right:40px; 
+    right:60px; 
     
 }
 @media(max-width:700px){
 .about-image {
 
-  width: 200px; 
-  height: 200px; 
+  width: 250px; 
+  height: 250px; 
 
   background-color: yellow; 
   border-radius: 10px; /* 想要方圓 */
   /* 放圖片 */
-  position:center;
-  bottom:-40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:150px;
   right:40px; 
 }
 .container {
